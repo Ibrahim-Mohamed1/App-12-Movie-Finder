@@ -15,7 +15,9 @@ class DataProvider extends Component {
             this.setState({
                 movie: res.data
             })
-        })
+        }).catch(function (error) { 
+            window.location.reload() 
+        });
     }
 
     render() {
